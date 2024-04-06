@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: mulis;
+}
+@font-face {
+  font-family: mulis;
+  src: url(font/Mulish-Medium.ttf);
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #192a56;
+}
+/* ?NAVBAR  */
+ul {
+  list-style-type: none;
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+}
+ul li {
+  display: inline-block;
+  padding: 18px 30px;
+}
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #192a56;
+  font-weight: 700;
+}
+ul li:hover {
+  background-color: lightgrey;
+}
+
+/* *FORM CONTAINER */
+
+.container1 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formpart {
+  height: 370px;
+  width: 400px;
+  background-image: linear-gradient(
+    to bottom,
+    #6b97a6,
+    rgba(255, 255, 255, 0.588)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 2;
+}
+.formpart h2 {
+  font-size: 1.15em;
+  margin: 5px 0px;
+}
+
+input[type="text"],
+[type="email"],
+[type="password"] {
+  display: block;
+  padding: 20px 90px;
+  text-align: center;
+  border: 1.2px solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+form input:hover{
+
+  transform: translateY(-5%);
+}
+form input:hover {
+  background-color: #91b5c4;
+}
+::placeholder {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: rgb(59, 57, 57);
+}
+form {
+  position: relative;
+}
+
+/* ? BUTTON PART */
+
+.btn1 {
+  padding: 15px 40px;
+  margin: 10px;
+  transform: translate(67%, 20%);
+  border-radius: 8px;
+  border: 1.5px solid rgb(255, 255, 255);
+  font-size: 1em;
+  background-color: #0c2461;
+  color: white;
+  font-family: mulis;
+  transition: 1s ease;
+}
+.btn1:hover {
+  transform: translate(65%, -6%);
+  background-color: #34606f;
+}
+
+/* *ANIMATION CONTAINER */
+.animation {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  animation-name: gol;
+  position: absolute;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes gol {
+  0% {
+    top: 70px;
+    left: 50px;
+    background-color: lightgreen;
+  }
+  25% {
+    top: 70px;
+    left: 1400px;
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    top: 600px;
+    left: 1400px;
+    background-color: red;
+  }
+  75% {
+    top: 600px;
+    left: 50px;
+    background-color: yellow;
+  }
+  100% {
+    top: 70px;
+    left: 50px;
+    background-color: lightgreen;
+  }
+}
